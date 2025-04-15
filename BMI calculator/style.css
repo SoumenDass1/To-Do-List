@@ -240,3 +240,55 @@ button:hover {
             padding: 12px;
       }
 }
+
+.theme-toggle {
+      position: fixed;
+      top: 20px;
+      right: 20px;
+      background: var(--light);
+      border: none;
+      padding: 10px;
+      border-radius: 50%;
+      box-shadow: var(--shadow);
+      cursor: pointer;
+      z-index: 1000;
+      transition: background 0.3s;
+}
+
+.theme-toggle i {
+      font-size: 18px;
+      color: var(--primary);
+}
+
+body.dark {
+      --primary: #ff9800;
+      --secondary: #e91e63;
+      --accent: #00e676;
+      --text: #e0e0e0;
+      --light: #121212;
+      --shadow: 0 0 20px rgba(255, 255, 255, 0.05);
+      background: linear-gradient(135deg, #1f1f1f 0%, #2c2c2c 100%);
+}
+
+body.dark .calculator-box {
+      background-color: var(--light);
+}
+
+body.dark select,
+body.dark input {
+      background-color: #1e1e1e;
+      color: var(--text);
+      border-color: #333;
+}
+
+body.dark .bmi-chart {
+      background: #1e1e1e;
+}
+
+body.dark .theme-toggle {
+      background: #1e1e1e;
+}
+
+body.dark .theme-toggle i {
+      color: var(--accent);
+}
